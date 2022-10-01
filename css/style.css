@@ -51,6 +51,8 @@ body {
 
 .active-filter:focus,
 .active-filter:hover {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
   border-radius: 4px;
   color: var(--btn-color);
   background-color: var(--background-btn);
@@ -157,6 +159,11 @@ body {
   margin-right: 50px;
 }
 
+.header-mail:hover,
+.header-tel:hover {
+  color: var(--accent-text);
+}
+
 .active.current {
   color: var(--accent-text);
 }
@@ -175,6 +182,14 @@ body {
 }
 /* ---------------------секція hero ---------------------*/
 .hero {
+  min-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(../image/bgc-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
   background-color: var(--first-background);
   padding-top: 200px;
   padding-bottom: 200px;
@@ -396,8 +411,8 @@ body {
 
 .footer-page {
   background-color: var(--first-background);
-  margin: 0 auto;
   min-width: 1600px;
+  margin: 0 auto;
 }
 
 .footer-container {
@@ -507,6 +522,12 @@ body {
 .project-link {
   text-decoration: none;
   color: inherit;
+}
+
+.project-item:hover,
+.project-item:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-container {
