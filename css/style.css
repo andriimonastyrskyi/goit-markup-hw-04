@@ -19,6 +19,7 @@
   --hero-color: #ffffff;
   --logo-header: #000000;
   --footer-color: #ffffff;
+  --bgc-social-footer: rgba(255, 255, 255, 0.1);
 }
 
 h1,
@@ -486,7 +487,7 @@ body {
   width: 44px;
   height: 44px;
   color: var(--footer-color);
-  background-color: var(--social-color);
+  background-color: var(--bgc-social-footer);
 }
 
 .social-link-footer:hover,
