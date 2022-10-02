@@ -170,6 +170,9 @@ body {
 
 .header-mail,
 .header-tel {
+  display: flex;
+  align-items: center;
+
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -456,7 +459,7 @@ body {
   color: var(--contacts-text);
 }
 
-.social-title {
+.social-title-footer {
   display: block;
   margin-bottom: 20px;
 
@@ -474,12 +477,27 @@ body {
 
 .social-list-footer {
   color: var(--footer-color);
-  background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-list-footer:hover,
-.social-list-footer:focus {
+.social-link-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 44px;
+  height: 44px;
+  color: var(--footer-color);
+  background-color: var(--social-color);
+}
+
+.social-link-footer:hover,
+.social-link-footer:focus {
+  color: var(--btn-color);
   background-color: var(--accent-text);
+}
+
+.social-icon-footer {
+  fill: currentColor;
 }
 
 /* -----------портфоліо-------------------- */
